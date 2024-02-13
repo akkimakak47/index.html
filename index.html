@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valentine day card for you</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(imag/i2.png);
+            background-repeat: no-repeat;
+            background-size: cover;            
+        }
+        .container{
+            position: relative;
+        }
+        .valentines{
+            position: relative;
+            top: 50px;
+            cursor: pointer;
+            animation: up 3s linear infinite;
+        }
+        .envelope{
+            padding: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #f10199;
+            border: 2px solid rgb(76, 1, 25);
+            border-radius: 5px;
+        }
+        .envelope:before{
+            background-color: #e901f1;
+            content: "";
+            position: absolute;
+            width: 212px;
+            height: 212px;
+            transform: rotate(45deg);
+            top: -105px;
+            left: 44px;
+            border-radius: 30px 0 0 0;   
+        }                                
+        .card{
+            position: relative;
+            background-color: #f38be7;
+            width: 270px;
+            height: 170px;
+            bottom: 190px;
+            left: 15px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: -5px -5px 100px rgba(0,0,0,0.4);
+            animation: cd 3s linear infinite;
+        }
+        @keyframes cd{
+            0% {
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateY(-100px);
+            }
+        }
+        .card:before{
+            content: "";
+            position: absolute;
+            border: 3px solid #a206aa;
+            border-style: dotted;
+            width: 240px;
+            height: 140px;
+            left: 12px;
+            top: 12px;
+            bottom: 0px;
+        }
+        .text{
+            position: absolute;
+            font-family: 'Brush Script Mt', cursive;
+            font-size: 28px;
+            text-align: center;
+            line-height: 25px;
+            top: 19px;
+            left: 70px;
+            color: #003049;
+        }
+        .four{
+            left: 70px;
+            animation: heart 1.7 ease-out infinite;
+        }                                          
+        @keyframes heart{
+            0%{
+                transform: translateY(0) rotate(-45deg); 
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-150px) rotate(-45deg); 
+                opacity: 0.5;
+            }
+        }                                                                                                                                                                              
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">Happy<br>valentine'day<br>Kruti<br>&#x1F497;</div>
+                <div class="texte">My Love<br>&#x1F49E;</div>
+            </div>
+            <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="shadow"></div>
+    
+</body>
+</html>
